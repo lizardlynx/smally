@@ -1,0 +1,9 @@
+MYSQL_HOST=localhost
+MYSQL_PORT=3306
+MYSQL_USERNAME=smally
+MYSQL_PASSWORD=somepassword
+MYSQL_DATABASE=smally
+MYSQL_ROOT_PASSWORD=somerootpassword
+REDIS_PORT=6379
+REDIS_HOST=localhost
+APP_URL=http://localhost:3000

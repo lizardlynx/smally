@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  db: 
+    image: mysql
+    restart: always
+    environment: 
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - MYSQL_USER=${MYSQL_USERNAME}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+      - MYSQL_DATABASE=${MYSQL_DATABASE}
+    ports:
+      - '${MYSQL_PORT}:${MYSQL_PORT}'
+
+  redis_db:
+    image: redis
+    restart: always
+    ports:
+      - '${REDIS_PORT}:${REDIS_PORT}'
+      
