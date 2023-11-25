@@ -14,15 +14,15 @@ Database is used through Sequelize ORM.
 Redis is used for caching, if the link exists in Redis, than we take it from there and not from a database.  
 
 So the structure looks like this:  
-request -> Interceptor -> Route Handler -> Redis            -> Interceptor -> Filter -> response
-                                        -> Database (mysql)  
+![image](https://github.com/lizardlynx/smally/assets/54850578/1a7ff743-c188-401c-a77e-964462ec34de)
+
 The project also has docker-compose file to run easily database and Redis.
 
 ## Structure
 The project has a standart structure, where /src folder has typescript code and /dist has compiled code. All the source code files have .ts extension and test files lie beside them with same name and .spec.ts extensions. 
 
 ## Tests  
-Whole project is covered by tests and two existing endpoints are being checked using e2e tests.
+Whole project is covered by tests, so it also uses a wide variety of stubs and mocks. Two existing endpoints are being checked using e2e tests.
 
 ## Scaling
 To design a Url shortener service of a big scale a good idea would be to use multiple servers
