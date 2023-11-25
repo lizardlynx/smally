@@ -47,3 +47,6 @@ days (but will it be a good user experience, that is the question).
 
 ## Author
 [Gorbunova Yelyzaveta](https://github.com/lizardlynx)
+
+## License
+MIT [smally](https://github.com/lizardlynx/smally)
