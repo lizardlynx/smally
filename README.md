@@ -7,20 +7,6 @@ This is a small URL shortener backend project.
  - The use of it is very simple - submit a long link - and get back a shorter one;
  - Then, when clicking on a short link - be redirected to a long one. 
 
-## Techniques And Libraries
-For this project were used:  
-- Nest.js;
-- Typescript;
-- MySql;
-- Redis;
-- Sequelize;
-- ioredis;
-- REST;
-- jest;
-- supertest;
-- docker;
-- eslint.
-
 ## Architecture
 The project has a server, where all requests are being sent. There are interceptors, which work as a logger:
 There are filters, which catch and style server errors.
